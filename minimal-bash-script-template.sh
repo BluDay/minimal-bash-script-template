@@ -36,9 +36,9 @@ cat << EOF
 EOF
 }
 
-print_sep() { printf "%*s\n" 60 | tr ' ' '-' ; }
+print_sep() { printf "%*s\n" 60 | tr ' ' '-'; }
 
-print_log() { printf "\e[m[\e[%dm%c\e[m] %s\n" "$@" ; }
+print_log() { printf "\e[m[\e[%dm%c\e[m] %s\n" "$@"; }
 
 log()
 {
@@ -55,10 +55,10 @@ eval_args()
 	for arg in $@
 	do
 		case $arg in
-			-h|-\?|--help) print_help ; exit ;;
+			-h|-\?|--help) print_help; exit;;
 
-			-m|--minimal) MINIMAL=1 ;;
-			-v|--verbose) VERBOSE=1 ;;
+			-m|--minimal) MINIMAL=1;;
+			-v|--verbose) VERBOSE=1;;
 		esac
 	done
 }
@@ -98,6 +98,8 @@ cat << EOF
 	0x65 0x72 0x2d 0x39 0x39 0x62
 
 	0x32 0x30 0x32 0x30
+
+	0x32 0x30 0x32 0x32
 
 EOF
 
